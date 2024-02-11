@@ -3,6 +3,7 @@ body {
   font-family: "Golos text", "Merriweather", sans-serif;
   font-size: 16px;
   color: rgb(49, 49, 49);
+  overflow-x: hidden;
 }
 .container {
   max-width: 1366px;
@@ -164,13 +165,16 @@ body {
 
 .inform-ticket {
   position: relative;
-  left: -8px;
+  left: -10px;
 }
 .inform-header__descr,
 .inform-body__title {
   font: 400 normal 36px/131% "Merriweather";
   text-align: left;
   text-transform: uppercase;
+}
+.inform-body__title {
+  margin-bottom: 44px;
 }
 .inform-header__descr span,
 .inform-body__title span {
@@ -188,18 +192,22 @@ body {
 
 /* TABLE */
 
-table {
+table,
+.inform-body__label {
   width: 100%;
   border-collapse: collapse;
+  font: 400 normal 20px/120% "Golos text";
+  margin-bottom: 28px;
 }
 
 td {
   border: 1px solid black;
   padding: 16px 0;
   border: none;
+}
+tr:not(:last-child) {
   border-bottom: 2px solid grey;
 }
-
 td:first-child {
   width: 44%;
   border-right: 2px solid grey;
@@ -209,7 +217,14 @@ td:last-child {
   width: 56%;
   padding-left: 13px;
 }
+td:nth-child(even) {
+  font-weight: 600;
+}
 del {
   text-decoration: line-through;
   text-decoration-color: red;
+}
+.inform-body__label {
+  text-align: left;
+  color: rgb(48, 87, 162);
 }
