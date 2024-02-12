@@ -7,6 +7,7 @@ body {
 }
 .container {
   max-width: 1366px;
+  position: relative;
   padding: 0 72px;
   margin: 0 auto;
 }
@@ -55,7 +56,7 @@ body {
   color: #313131;
   width: 550px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 .first-section__content_button:first-child {
   margin-right: 16px;
@@ -150,9 +151,7 @@ body {
 }
 
 /* SECOND SECTION */
-.second-section {
-  margin-bottom: 119px;
-}
+
 .inform-container {
   display: flex;
   flex-direction: column;
@@ -194,8 +193,7 @@ body {
 /* TABLE */
 
 table,
-.inform-body__label,
-.stages-subtitle {
+.inform-body__label {
   width: 100%;
   border-collapse: collapse;
   font: 400 normal 20px/120% "Golos text";
@@ -226,14 +224,11 @@ del {
   text-decoration: line-through;
   text-decoration-color: red;
 }
-.inform-body__label,
-.stages-subtitle {
+.inform-body__label {
   text-align: left;
   color: rgb(48, 87, 162);
 }
-/* THIRD SECTION */
-
-.stages-title {
+THIRD SECTION */ .stages-title {
   font: 400 normal 54px/120% "Merriweather";
   text-transform: uppercase;
   display: inline-block;
@@ -265,4 +260,35 @@ del {
 .stages-footer {
   display: flex;
   gap: 25px;
+}
+/* SWIPER-SLIDER */
+
+#swiper-button-next,
+#swiper-button-prev {
+  background-color: #000;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  transition: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#swiper-button-next:hover,
+#swiper-button-prev:hover {
+  background-color: #fbce51;
+}
+.slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-buttons {
+  display: flex;
+  width: 151px;
+
+  justify-content: space-between;
 }
