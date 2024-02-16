@@ -1,0 +1,213 @@
+@media (min-width: 1920px) {
+  .header__content,
+  .header__box-logo {
+    padding-left: 72px;
+    padding-top: 2px;
+  }
+  .header__descr {
+    padding-left: 2px;
+  }
+  .header__descr br:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__title {
+    font: 400 normal 45px "Merriweather";
+  }
+  .header__content_button {
+    width: 145px;
+    padding: 10px 45px;
+  }
+  .header__content_buttonsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header__descr {
+    font: 400 normal 14px "Golos text";
+    text-align: left;
+  }
+  .inform-body img {
+    width: 460px;
+  }
+  .stages-title,
+  .slider-title {
+    font: 400 normal 44px/120% "Merriweather";
+  }
+  .stages__plane {
+    width: 200px;
+    height: 100px;
+    bottom: -177px;
+    right: 131px;
+  }
+}
+@media (max-width: 900px) {
+  .second-section {
+    margin-bottom: 70px;
+  }
+  .inform-header {
+    margin: 0 auto;
+    display: block;
+  }
+  .inform-header__img,
+  .inform-img {
+    display: flex;
+    justify-content: center;
+  }
+  .inform-body {
+    flex-direction: column-reverse;
+  }
+  .header__title {
+    font: 400 normal 35px "Merriweather";
+  }
+  .inform-header__descr,
+  .inform-body__title {
+    font: 400 normal 26px/131% "Merriweather";
+    text-align: center;
+  }
+  .stages-title,
+  .slider-title {
+    font: 400 normal 34px/120% "Merriweather";
+  }
+  .stages__plane {
+    width: 200px;
+    height: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .inform-body img {
+    width: 360px;
+  }
+  .inform-header__img img {
+    width: 320px;
+  }
+  .red-line {
+    height: 50px;
+  }
+  .marquee span {
+    font: 400 normal 18px "Merriweather";
+  }
+  .stages-body {
+    gap: 8px;
+  }
+  .stages-subtitle {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .stages-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0;
+  }
+  .stages-card7 {
+    grid-column: auto;
+  }
+  .stages-card:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .header__title {
+    font: 400 normal 25px "Merriweather";
+  }
+  .header__descr {
+    font: 400 normal 12px "Golos text";
+    text-align: left;
+    max-width: 60%;
+  }
+  .header__content_buttonsBox {
+    gap: 10px;
+  }
+  .header__content_button {
+    width: auto;
+  }
+  .header__content_button:first-child {
+    margin-right: 0;
+  }
+
+  .stages__plane {
+    width: 200px;
+    height: 100px;
+    bottom: 64px;
+    right: 81px;
+  }
+  .stages-title,
+  .slider-title {
+    font: 400 normal 22px/120% "Merriweather";
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header__logo {
+    width: 63%;
+    padding-top: 18px;
+  }
+  .header {
+    background-color: #e9ded4;
+    background-image: none;
+    height: 773px;
+  }
+  .header__title {
+    font: 400 normal 36px/110% "Merriweather";
+  }
+  .header__logo {
+    margin-bottom: 16px;
+  }
+  .header-title_375 {
+    padding-left: 12px;
+  }
+  .header-title_375 span {
+    position: absolute;
+    top: 117px;
+    right: 0;
+  }
+  .header__descr {
+    font: 400 normal 18px/128% "Golos text";
+    max-width: 100%;
+  }
+  .header__descr br:last-child {
+    display: none;
+  }
+  .header__descr {
+    margin-bottom: 31px;
+  }
+  .header__content_button {
+    padding: 14px;
+  }
+  .header__content_buttonsBox br {
+    display: none;
+  }
+  .red-line {
+    height: 38px;
+    z-index: 50;
+    position: relative;
+  }
+  .header__imgBox {
+    display: block;
+    overflow: visible;
+  }
+  .header__imgBox__city {
+    position: relative;
+    top: -103px;
+    right: 20px;
+  }
+  .header__imgBox__horse {
+    position: absolute;
+    top: 174px;
+    right: 150px;
+    width: 98px;
+    height: 131px;
+  }
+  .inform-container {
+    padding-top: 28px;
+  }
+  .inform-header__descr, .inform-body__title {
+    text-align: left;
+  }
+}
