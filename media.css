@@ -55,7 +55,6 @@
     margin-bottom: 70px;
   }
   .inform-header {
-    margin: 0 auto;
     display: block;
   }
   .inform-header__img,
@@ -157,11 +156,11 @@
     text-align: center;
     width: 100%;
   }
-}
-@media (max-width: 376px) {
   .container {
     padding: 0 20px;
   }
+}
+@media (max-width: 376px) {
   .header__logo {
     width: 63%;
     padding-top: 18px;
@@ -232,7 +231,6 @@
   }
   .inform-header__descr {
     margin-bottom: 41px;
-    max-width: 90%;
   }
   .inform-header__img,
   .inform-img img {
@@ -320,8 +318,8 @@
   }
   .swiper-buttons {
     position: absolute;
-    bottom: -56px;
-    right: 97px;
+    right: 125px;
+    top: 549px;
   }
   .stages-body {
     position: absolute;
@@ -337,10 +335,7 @@
     display: none;
     position: absolute;
   }
-  .dots {
-    display: block;
-    position: static;
-  }
+
   .inform-table__descr1920 {
     position: absolute;
     display: none;
@@ -355,5 +350,32 @@
   .inform-table__row375 {
     display: flex;
     flex-direction: row;
+  }
+  .slider-header {
+    margin-bottom: 28px;
+  }
+  .slide-card__descr {
+    margin-bottom: 20px;
+  }
+  .swiper-buttons {
+    width: 128px;
+  }
+  #nextBtn,
+  #prevBtn {
+    height: 35px;
+    width: 35px;
+  }
+  .mensTournament {
+    padding-bottom: 175px;
+  }
+  .inform-header__descr br {
+    display: none;
+    position: absolute;
+  }
+  .header__descr-br375 {
+    display: block;
+  }
+  .inform-header {
+    margin-bottom: -4px;
   }
 }

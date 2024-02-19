@@ -1,3 +1,4 @@
+//Анимация заголовков при первой прокрутке
 document.addEventListener("DOMContentLoaded", function() {
   let fadeInElements = document.getElementsByClassName("fade-in");
   
@@ -34,7 +35,7 @@ const dots = [];
 let currentSlide = 0;
 let interval;
 
-// Создаем индикаторы точек (dots)
+// Создаем индикаторы точек (dots), по факту скрыты, но мне лично они больше нравятся, нежели цифры.
 slides.forEach((_, index) => {
   const dot = document.createElement('span');
   dot.classList.add('dot');
@@ -81,7 +82,7 @@ prevBtn.addEventListener('click', prevSlide);
 
 // Автоматическое переключение слайдов каждые 4 секунды
 function startSlider() {
-  // interval = setInterval(nextSlide, 4000);
+  interval = setInterval(nextSlide, 4000);
 }
 
 // Остановка автоматического переключения слайдов

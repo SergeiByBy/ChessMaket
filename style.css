@@ -133,6 +133,10 @@ body {
   z-index: 50;
 }
 
+.header__descr-br375 {
+  display: none;
+}
+
 /* БЕГУЩАЯ СТРОКА */
 
 .red-line {
