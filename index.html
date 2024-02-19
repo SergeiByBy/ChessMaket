@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Клуб четырех коней</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Merriweather&display=swap"
       rel="stylesheet"
-   >
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./media.css">
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./media.css" />
   </head>
   <body>
-      <!-- первая секция -->
-      <header class="header">
-        <div class="container">
-          <div class="header__box-logo">
-            <img
-              class="header__logo"
-              src="./icons/logo.png"
-              alt="logo"
+    <!-- первая секция -->
+    <header class="header">
+      <div class="container">
+        <div class="header__box-logo">
+          <img class="header__logo" src="./icons/logo.png" alt="logo" />
+        </div>
+        <div class="header__content">
+          <h1 class="header__title fade-in">
+            Превратите<br /><span class="dodger">у</span>ездный город<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="header-title_375">
+              в столицу<br />&nbsp;&nbsp;<span>земного шара</span></span
+            >
+          </h1>
+          <p class="header__descr">
+            Оплатите взнос на телеграммы <br />для организации<br />&nbsp;Международного
+            васюкинского турнира по шахматам
+          </p>
+          <div class="header__content_buttonsBox">
+            <a href="#support-idea" class="header__content_button">
+              Поддержать <br />
+              шахматную мысль</a
+            >
+            <a href="#more" class="header__content_button">
+              Подробнее <br />
+              о турнире</a
             >
           </div>
-          <div class="header__content">
-            <h1 class="header__title fade-in">
-              Превратите<br><span class="dodger">у</span>ездный город<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <span class="header-title_375"> в столицу<br>&nbsp;&nbsp;<span>земного шара</span></span>
-            </h1>
-            <p class="header__descr">
-              Оплатите взнос на телеграммы <br>для организации<br>&nbsp;Международного
-              васюкинского турнира по шахматам
-            </p>
-            <div class="header__content_buttonsBox">
-              <a href="#support-idea" class="header__content_button">
-                Поддержать <br> шахматную мысль</a>
-              <a href="#more" class="header__content_button">
-                Подробнее <br> о турнире</a>
-            </div>
-          </div>
-          <div class="header__imgBox">
-            <img class="header__imgBox__city" src="./icons/city375.png" alt="city">
-            <img class="header__imgBox__horse" src="./icons/horse.png" alt="horse">
-          </div>
         </div>
-      </header>
+        <div class="header__imgBox">
+          <img
+            class="header__imgBox__horse"
+            src="./icons/horse.png"
+            alt="horse"
+          />
+        </div>
+      </div>
+    </header>
     <main class="main">
-    
       <!-- Бегущая строка -->
       <div class="red-line">
         <div class="marquee">
@@ -69,17 +73,28 @@
           <div class="inform-container" id="support-idea">
             <div class="inform-header">
               <h2 class="inform-header__descr">
-                Чтобы поддержать<br>Международный васюкинский<br>турнир
-                посетите лекцию на тему:<br>
+                Чтобы поддержать<br />Международный васюкинский<br />турнир
+                <img
+                  class="inform-header__img375"
+                  src="./icons/Grandmasters.png"
+                  alt="Grandmasters"
+                />
+                посетите лекцию на тему:<br />
                 <span>«Плодотворная &nbsp;дебютная&nbsp;идея»</span>
               </h2>
+              <img
+                class="inform-img375"
+                src="./icons/brightMan.png"
+                alt="brightMan"
+              />
+
               <div class="inform-header__img">
-                <img src="./icons/Grandmasters.png" alt="Grandmasters">
+                <img src="./icons/Grandmasters.png" alt="Grandmasters" />
               </div>
             </div>
             <div class="inform-body">
               <div class="inform-img">
-                <img src="./icons/brightMan.png" alt="brightMan">
+                <img src="./icons/brightMan.png" alt="brightMan" />
               </div>
               <div class="inform-ticket">
                 <p class="inform-body__title">
@@ -98,13 +113,37 @@
                       <td>Дата и время мероприятия:</td>
                       <td>22 июня 1927 г. в 18:00</td>
                     </tr>
-                    <tr>
-                      <td>Стоимость входных билетов:</td>
-                      <td>20 коп.</td>
+                    <!-- Тут наверное косяк дизайнера, так как на большом экране вход стоит 20, игра 50, а на маленьких экранах наоборот...неплохая скидка с мобилки. -->
+                    <tr class="inform-table__row375">
+                      <td>
+                        <span class="inform-table__descr1920"
+                          >Стоимость входных билетов:</span
+                        >
+                        <span class="inform-table__descr375"
+                          >Плата за игру:</span
+                        >
+                      </td>
+                      <td>
+                        <span class="inform-table__descr1920">20 коп.</span>
+                        <span
+                          class="inform-table__descr375 inform-table__price375"
+                          >50 коп.</span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                      <td>Плата за игру:</td>
-                      <td>50 коп.</td>
+                      <td>
+                        <span class="inform-table__descr1920"
+                          >Плата за игру:</span
+                        >
+                        <span class="inform-table__descr375"
+                          >Стоимость входных билетов:</span
+                        >
+                      </td>
+                      <td>
+                        <span class="inform-table__descr1920">50 коп. </span
+                        ><span class="inform-table__descr375">20 коп. </span>
+                      </td>
                     </tr>
                     <tr>
                       <td>Взнос на телеграммы:</td>
@@ -123,33 +162,36 @@
       <!-- Третья секция -->
       <section class="third-section">
         <div class="container stages">
-          <img class="stages__plane" src="./icons/plane.png" alt="самолет">
-          <h2 class="stages-title fade-in">Этапы преображения <br>Васюков</h2>
-          <a href="https://sso.ya.ru/install?uuid=0c34b7c3-5dfd-462b-a198-01d2e6c172d7" class="stages-subtitle">
-            Будущие источники<br>
+          <img class="stages__plane" src="./icons/plane.png" alt="самолет" />
+          <h2 class="stages-title fade-in">Этапы преображения <br />Васюков</h2>
+          <a
+            href="https://sso.ya.ru/install?uuid=0c34b7c3-5dfd-462b-a198-01d2e6c172d7"
+            class="stages-subtitle"
+          >
+            Будущие источники<br />
             обогащения васюкинцев
           </a>
           <div class="stages-body">
             <div class="stages-card stages-card1">
-              <img src="./icons/card1.png" alt="stages-card">
+              <img src="./icons/card1.png" alt="stages-card" />
             </div>
             <div class="stages-card stages-card2">
-              <img src="./icons/card2.png" alt="stages-card">
+              <img src="./icons/card2.png" alt="stages-card" />
             </div>
             <div class="stages-card stages-card3">
-              <img src="./icons/card3.png" alt="stages-card">
+              <img src="./icons/card3.png" alt="stages-card" />
             </div>
             <div class="stages-card stages-card4">
-              <img src="./icons/card4.png" alt="stages-card">
+              <img src="./icons/card4.png" alt="stages-card" />
             </div>
             <div class="stages-card stages-card5">
-              <img src="./icons/card5.png" alt="stages-card">
+              <img src="./icons/card5.png" alt="stages-card" />
             </div>
             <div class="stages-card stages-card6">
-              <img src="./icons/card6.png" alt="stages-card">
+              <img src="./icons/card6.png" alt="stages-card" />
             </div>
             <div class="stages-card stages-card7">
-              <img src="./icons/card7.png" alt="stages-card">
+              <img src="./icons/card7.png" alt="stages-card" />
             </div>
           </div>
         </div>
@@ -157,9 +199,9 @@
       <!-- Четвёртая секция -->
       <section class="mensTournament">
         <div class="container">
-          <div id="slider">
+          <!-- <div id="slider">
             <div class="slider-header" id="more">
-              <h2 class="slider-title fade-in ">Участники турнира</h2>
+              <h2 class="slider-title fade-in">Участники турнира</h2>
               <div class="swiper-buttons">
                 <div class="prev">
                   <svg
@@ -170,8 +212,6 @@
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                   >
-                   
-                    
                     <path
                       id="Vector"
                       d="M9.87573 18.3373L1.41418 9.87573L9.87573 1.41418"
@@ -179,11 +219,10 @@
                       stroke-opacity="1.000000"
                       stroke-width="2.000000"
                       stroke-linecap="square"
-                   >
-                  </path>
+                    ></path>
                   </svg>
                 </div>
-              <div class="pagination"> 1 / 6</div>
+                <div class="pagination">1 / 6</div>
                 <div class="next">
                   <svg
                     width="11.289917"
@@ -193,7 +232,6 @@
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                   >
-                    
                     <path
                       id="Vector1"
                       d="M1.41418 1.41418L9.87573 9.87573L1.41418 18.3373"
@@ -201,151 +239,354 @@
                       stroke-opacity="1.000000"
                       stroke-width="2.000000"
                       stroke-linecap="square"
-                   > <path/>
+                    ></path>
                   </svg>
                 </div>
               </div>
             </div>
             <div class="slider">
               <div class="slides">
-                <div class="slide ">
-                <div class="slide-cards ">
-              <div class="slide-card">
-                <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C" target="blank" class="slide-card__link">Подробнее</a>
+                <div class="slide">
+                  <div class="slide-cards">
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a
+                        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                        target="blank"
+                        class="slide-card__link"
+                        >Подробнее</a
+                      >
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Эммануил Ласкер</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a
+                        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                        target="blank"
+                        class="slide-card__link"
+                        >Подробнее</a
+                      >
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Александр Алехин</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a
+                        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                        target="blank"
+                        class="slide-card__link"
+                        >Подробнее</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-cards">
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Арон Нимцович</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a
+                        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                        target="blank"
+                        class="slide-card__link"
+                        >Подробнее</a
+                      >
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Рихард Рети</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a
+                        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                        target="blank"
+                        class="slide-card__link"
+                        >Подробнее</a
+                      >
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Остап Бендер</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a
+                        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                        target="blank"
+                        class="slide-card__link"
+                        >Подробнее</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-cards">
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-cards">
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-cards">
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-cards">
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a href="" class="slide-card__link">Подробнее</a>
+                    </div>
+                    <div class="slide-card slide-card-hidden375">
+                      <img
+                        src="./icons/MysteryMan.png"
+                        alt="MysteryMan"
+                        class="slide-card__img"
+                      />
+                      <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                      <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                      <a
+                        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                        target="blank"
+                        class="slide-card__link"
+                        >Подробнее</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="slide-card">
-                <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                <h3 class="slide-card__title">Эммануил Ласкер</h3>
-                <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C" target="blank" class="slide-card__link">Подробнее</a>
-              </div>  
-              <div class="slide-card">
-                <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                <h3 class="slide-card__title">Александр Алехин</h3>
-                <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C" target="blank" class="slide-card__link">Подробнее</a>
-              </div>
+              <div class="controls"></div>
+            </div>
+          </div> -->
+          <div id="slider" class="slider">
+            <div class="slides">
+              <div class="slide">
+                <div class="slide-card slide-card-hidden375">
+                  <img
+                    src="./icons/MysteryMan.png"
+                    alt="MysteryMan"
+                    class="slide-card__img"
+                  />
+                  <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                  <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                  <a
+                    href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                    target="blank"
+                    class="slide-card__link"
+                    >Подробнее</a
+                  >
                 </div>
+                <div class="slide-card slide-card-hidden375">
+                  <img
+                    src="./icons/MysteryMan.png"
+                    alt="MysteryMan"
+                    class="slide-card__img"
+                  />
+                  <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                  <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                  <a
+                    href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                    target="blank"
+                    class="slide-card__link"
+                    >Подробнее</a
+                  >
                 </div>
-                <div class="slide">
-                <div class="slide-cards">
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Арон Нимцович</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C" target="blank" class="slide-card__link">Подробнее</a>
-                  </div>
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Рихард Рети</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C" target="blank" class="slide-card__link">Подробнее</a>
-                  </div>  
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Остап Бендер</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C" target="blank" class="slide-card__link">Подробнее</a>
-                  </div>
-                </div>
-                </div>
-                <div class="slide">
-                <div class="slide-cards">
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>  
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>
-               
-                </div>
-                </div>
-                <div class="slide">
-                <div class="slide-cards">
-                   <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>  
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>
-                </div>
-                </div>
-                <div class="slide">
-                <div class="slide-cards">
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>  
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>
-                </div>
-                </div>
-                <div class="slide">
-                <div class="slide-cards">
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>  
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="" class="slide-card__link">Подробнее</a>
-                  </div>
-                  <div class="slide-card">
-                    <img src="./img/MysteryMan.png" alt="MysteryMan" class="slide-card__img"> 
-                    <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
-                    <p class="slide-card__descr">Чемпион мира по шахматам</p>
-                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C" target="blank" class="slide-card__link">Подробнее</a>
-                  </div>
-                </div>
+                <div class="slide-card slide-card-hidden375">
+                  <img
+                    src="./icons/MysteryMan.png"
+                    alt="MysteryMan"
+                    class="slide-card__img"
+                  />
+                  <h3 class="slide-card__title">Хозе-Рауль Капабланка</h3>
+                  <p class="slide-card__descr">Чемпион мира по шахматам</p>
+                  <a
+                    href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
+                    target="blank"
+                    class="slide-card__link"
+                    >Подробнее</a
+                  >
                 </div>
               </div>
-              <div class="controls">
+              <div class="slide">
+                <img src="./icons/MysteryMan.png" alt="Slide 4" />
+                <img src="./icons/MysteryMan.png" alt="Slide 5" />
+                <img src="./icons/MysteryMan.png" alt="Slide 6" />
               </div>
             </div>
           </div>
+          <div class="swiper-buttons">
+            <div id="prevBtn">
+              <svg
+                width="11.289917"
+                height="19.751465"
+                viewBox="0 0 11.2899 19.7515"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  id="Vector"
+                  d="M9.87573 18.3373L1.41418 9.87573L9.87573 1.41418"
+                  stroke="#FFFFFF"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linecap="square"
+                ></path>
+              </svg>
+            </div>
+            <div class="pagination">1 / 6</div>
+            <div id="nextBtn">
+              <svg
+                width="11.289917"
+                height="19.751465"
+                viewBox="0 0 11.2899 19.7515"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  id="Vector1"
+                  d="M1.41418 1.41418L9.87573 9.87573L1.41418 18.3373"
+                  stroke="#FFFFFF"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linecap="square"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="dots" id="dots"></div>
         </div>
       </section>
       <div class="red-line">
@@ -359,9 +600,13 @@
       </div>
     </main>
     <footer class="footer">
-   <div class="container">
-    <p class="footer-descr">   Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
-   </div>
+      <div class="container">
+        <p class="footer-descr">
+          Все персонажи, события и цитаты являются вымышленными и не принадлежат
+          создателям сайта. С подробностями можно познакомиться в главе XXXIV
+          романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+        </p>
+      </div>
     </footer>
     <script defer src="./script.js"></script>
   </body>

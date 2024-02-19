@@ -255,6 +255,10 @@ del {
   text-align: left;
   color: rgb(48, 87, 162);
 }
+.inform-header__img375,
+.inform-img375 {
+  display: none;
+}
 
 /* THIRD SECTION */
 
@@ -338,8 +342,8 @@ del {
 .mensTournament {
   padding-bottom: 128px;
 }
-.next,
-.prev {
+#nextBtn,
+#prevBtn {
   background-color: #000;
   width: 44px;
   height: 44px;
@@ -353,8 +357,8 @@ del {
   justify-content: center;
   cursor: pointer;
 }
-.next:hover,
-.prev:hover {
+#nextBtn:hover,
+#prevBtn:hover {
   background-color: #fbce51;
 }
 .disable {
@@ -450,4 +454,43 @@ del {
 }
 .footer-descr {
   color: rgba(49, 49, 49, 0.6);
+}
+/* slider new */
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+}
+
+.slide img {
+  width: 33.33%;
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: red;
 }

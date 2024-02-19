@@ -67,6 +67,9 @@
     font: 400 normal 26px/131% "Merriweather";
     text-align: center;
   }
+  .inform-header__descr {
+    margin-bottom: 20px;
+  }
   .stages-title,
   .slider-title {
     font: 400 normal 34px/120% "Merriweather";
@@ -150,7 +153,7 @@
   }
   .header {
     background-color: #e9ded4;
-    background-image: none;
+    background: url(./icons/city3751.jpg) no-repeat;
     height: 773px;
   }
   .header__title {
@@ -168,7 +171,7 @@
     right: 0;
   }
   .header__descr {
-    font: 400 normal 18px/128% "Golos text";
+    font: 400 normal 18px/130% "Golos text";
     max-width: 100%;
   }
   .header__descr br:last-child {
@@ -205,9 +208,118 @@
     height: 131px;
   }
   .inform-container {
-    padding-top: 28px;
+    padding-top: 27px;
   }
-  .inform-header__descr, .inform-body__title {
+  .inform-header__descr,
+  .inform-body__title {
     text-align: left;
+    font: 400 normal 28px/137% "Merriweather";
+  }
+  .inform-header__descr {
+    margin-bottom: 41px;
+    max-width: 90%;
+  }
+  .inform-header__img,
+  .inform-img img {
+    display: none;
+  }
+  .inform-header__img375 {
+    display: block;
+    width: 335px;
+    padding: 23px 0;
+  }
+  .inform-img375 {
+    display: block;
+    height: 394px;
+    position: relative;
+    left: -14px;
+    top: -7px;
+  }
+  .inform-body__title {
+    margin: 0;
+    margin-top: 23px;
+    padding-left: 10px;
+  }
+  .inform-table {
+    padding-top: 41px;
+  }
+  .inform-table tbody,
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .inform-table tbody {
+    padding-left: 10px;
+  }
+  .inform-table tbody td {
+    padding: 0;
+    width: 100%;
+    border: none;
+  }
+  tr:not(:first-child) {
+    padding-top: 15px;
+  }
+  .inform-table td:nth-child(odd) {
+    margin-bottom: 12px;
+  }
+  .inform-table td:nth-child(even) {
+    margin-bottom: 16px;
+  }
+  .inform-table__descr375 {
+    position: relative;
+    display: block;
+  }
+  .inform-table__descr1920 {
+    position: absolute;
+    display: none;
+  }
+  .inform-table__row375 {
+    display: flex;
+    flex-direction: row;
+  }
+  .inform-body__label {
+    font: 400 normal 18px/120% "Golos text";
+    padding-left: 10px;
+  }
+  table {
+    margin-bottom: 25px;
+  }
+  .stages-title,
+  .slider-title {
+    font: 400 normal 36px/110% "Merriweather";
+    text-align: left;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .second-section {
+    margin-bottom: 92px;
+  }
+  .stages-subtitle {
+    position: static;
+    display: block;
+    font: 400 normal 18px/110% "Golos text";
+  }
+  .stages-subtitle br {
+    display: none;
+    position: absolute;
+  }
+  .swiper-buttons {
+    position: absolute;
+    bottom: -56px;
+    right: 97px;
+  }
+  .stages-body {
+    position: absolute;
+    display: none;
+  }
+  .third-section {
+    margin-bottom: 634px;
+  }
+  .slide-card__img {
+    width: 240px;
+  }
+  .slide-card-hidden375:not(:nth-child(3n + 1)) {
+    display: none;
+    position: absolute;
   }
 }
