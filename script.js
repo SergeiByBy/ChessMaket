@@ -20,17 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
-
 // SLIDER
+
 const slider = document.getElementById('slider');
-const slidesContainer = slider.querySelector('.slides');
+const slidesContainer = slider.querySelector('#slides');
 const slides = slider.querySelectorAll('.slide');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const dotsContainer = document.getElementById('dots');
+const pagination = document.getElementById('pagination');
 const dots = [];
 
 let currentSlide = 0;
@@ -54,6 +52,10 @@ function showSlide(index) {
     dot.classList.toggle('active', i === index);
   });
   currentSlide = index;
+  pagination.textContent = `${index + 1} / ${slides.length}`;
+  index === 0 ?  prevBtn.disabled : "";
+  index === slides.length - 1 ? nextBtn.disabled : "";
+  
 }
 
 // Переход к следующему слайду
@@ -79,9 +81,10 @@ prevBtn.addEventListener('click', prevSlide);
 
 // Автоматическое переключение слайдов каждые 4 секунды
 function startSlider() {
-  interval = setInterval(nextSlide, 4000);
+  // interval = setInterval(nextSlide, 4000);
 }
 
+// Остановка автоматического переключения слайдов
 function stopSlider() {
   clearInterval(interval);
 }

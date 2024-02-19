@@ -192,6 +192,7 @@ body {
 .inform-ticket {
   position: relative;
   left: -10px;
+  top: 5px;
 }
 .inform-header__descr,
 .inform-body__title {
@@ -200,7 +201,7 @@ body {
   text-transform: uppercase;
 }
 .inform-body__title {
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 .inform-header__descr span,
 .inform-body__title span {
@@ -258,6 +259,10 @@ del {
 .inform-header__img375,
 .inform-img375 {
   display: none;
+}
+.inform-table__descr375 {
+  display: none;
+  position: absolute;
 }
 
 /* THIRD SECTION */
@@ -340,7 +345,8 @@ del {
 /* SWIPER-SLIDER, Four-section */
 
 .mensTournament {
-  padding-bottom: 128px;
+  padding-bottom: 138px;
+  position: relative;
 }
 #nextBtn,
 #prevBtn {
@@ -371,25 +377,26 @@ del {
   justify-content: space-between;
 }
 .swiper-buttons {
+  top: 8px;
+  right: 71px;
+  position: absolute;
   display: flex;
   width: 151px;
   justify-content: space-between;
 }
 .second-section {
-  margin-bottom: 166px;
+  margin-bottom: 176px;
 }
 .third-section {
   margin-bottom: 198px;
 }
-.slider {
+#slider {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-.slides {
+#slides {
   display: flex;
-  white-space: nowrap;
-
   transition: transform 0.5s ease-in-out;
 }
 .slide {
@@ -400,6 +407,10 @@ del {
   margin-top: 10px;
   text-align: center;
 }
+.dots {
+  position: absolute;
+  display: none;
+}
 .pagination {
   margin-top: 10px;
   text-align: center;
@@ -408,8 +419,13 @@ del {
 .slide-cards,
 .slide-card {
   display: flex;
+  height: 100%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
+}
+.slide-cards {
+  gap: 20px;
 }
 .slide-card {
   flex-direction: column;
@@ -426,9 +442,7 @@ del {
   margin: 0;
   margin-bottom: 19px;
 }
-.slide-cards {
-  padding: 0 39px;
-}
+
 .slide-card__img {
   margin-bottom: 31px;
 }
@@ -472,11 +486,6 @@ del {
   flex: 0 0 100%;
   display: flex;
 }
-
-.slide img {
-  width: 33.33%;
-}
-
 .dots {
   text-align: center;
 }
