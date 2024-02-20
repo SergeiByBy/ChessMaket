@@ -291,6 +291,10 @@ del {
 .stages {
   position: relative;
 }
+.slider2 {
+  display: none;
+  position: absolute;
+}
 .stages__plane {
   position: absolute;
   bottom: 1px;
@@ -353,7 +357,9 @@ del {
   position: relative;
 }
 #nextBtn,
-#prevBtn {
+#nextBtn2,
+#prevBtn,
+#prevBtn2 {
   background-color: #000;
   width: 44px;
   height: 44px;
@@ -368,7 +374,9 @@ del {
   cursor: pointer;
 }
 #nextBtn:hover,
-#prevBtn:hover {
+#prevBtn:hover,
+#prevBtn2:hover,
+#nextBtn2:hover {
   background-color: #fbce51;
 }
 .disable {
@@ -385,6 +393,7 @@ del {
   right: 71px;
   position: absolute;
   display: flex;
+  align-items: center;
   width: 151px;
   justify-content: space-between;
 }
@@ -403,6 +412,28 @@ del {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+.slider2 {
+  display: none;
+  position: absolute;
+}
+
+.slide2 img {
+  width: 100%;
+  height: auto;
+}
+
+.active {
+  background-color: #333;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination span {
+  cursor: pointer;
+}
+
 .slide {
   flex: 0 0 100%;
   text-align: center;
@@ -416,6 +447,7 @@ del {
   display: none;
 }
 .pagination {
+  cursor: pointer;
   margin-top: 10px;
   text-align: center;
   width: 66px;
@@ -500,7 +532,7 @@ del {
   height: 10px;
   border-radius: 50%;
   background-color: black;
-  margin: 0 5px;
+  margin: 0 3px;
   cursor: pointer;
 }
 

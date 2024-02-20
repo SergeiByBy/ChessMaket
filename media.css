@@ -187,13 +187,12 @@
   .header__descr {
     font: 400 normal 18px/130% "Golos text";
     max-width: 100%;
+    margin-bottom: 29px;
   }
   .header__descr br:last-child {
     display: none;
   }
-  .header__descr {
-    margin-bottom: 31px;
-  }
+
   .header__content_button {
     padding: 14px;
   }
@@ -239,7 +238,8 @@
   .inform-header__img375 {
     display: block;
     width: 335px;
-    padding: 23px 0;
+    padding-top: 21px;
+    padding-bottom: 23px;
   }
   .inform-img375 {
     display: block;
@@ -295,7 +295,7 @@
     padding-left: 10px;
   }
   table {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
   .stages-title,
   .slider-title {
@@ -305,7 +305,7 @@
     margin-bottom: 14px;
   }
   .second-section {
-    margin-bottom: 92px;
+    margin-bottom: 98px;
   }
   .stages-subtitle {
     position: static;
@@ -326,7 +326,7 @@
     display: none;
   }
   .third-section {
-    margin-bottom: 634px;
+    margin-bottom: 122px;
   }
   .slide-card__img {
     width: 240px;
@@ -377,5 +377,34 @@
   }
   .inform-header {
     margin-bottom: -4px;
+  }
+  .slider2 {
+    display: block;
+    position: static;
+    padding-top: 152px;
+  }
+  .stages__plane {
+    animation: none;
+    width: 336px;
+    height: 203px;
+    bottom: 293px;
+    right: 13px;
+  }
+  .buttons__slider2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+  }
+  #nextBtn2,
+  #prevBtn2 {
+    width: 35px;
+    height: 35px;
+  }
+  .slides2 {
+    margin-bottom: 23px;
+  }
+  .pagination2 {
+    padding: 0 4px;
   }
 }
